@@ -8,7 +8,7 @@
     min-height: 100vh;
 }
 
-header, footer {
+.header, .footer {
     height: 40px;
 }
 
@@ -32,15 +32,16 @@ header, footer {
     flex-grow: 1;
 }
 
-h2 {
-    margin: 0 auto;
-}
-
 .news {
     display: flex;
     flex-direction: column;
     width: 200px;
-    background-color: grey; 
+    margin: 0;
+    background-color: grey;
+}
+
+.news h2 {
+    text-align: center;
 }
 
 .news_list {
