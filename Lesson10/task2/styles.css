@@ -19,11 +19,11 @@
 }
 
 .navigation {
+    display: flex;
     list-style-type: none; 
 }
 
 .navigation_item {
-    display: inline-block;
     margin-right: 16px;
 }
 
@@ -41,6 +41,8 @@
 }
 
 .news {
+    display: flex;
+    flex-direction: column;
     width: 200px;
     background-color: grey;
 }
