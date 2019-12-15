@@ -27,10 +27,12 @@
 }
 
 .idea {
-	margin: auto;
+	display: inline-block;
 	padding: 4px;	
-	color: #fff;
+	margin: auto;
+	overflow: hidden;
 	text-transform: uppercase;
-	word-break: nowrap;
+	color: #fff;
+	white-space: nowrap;
 	text-overflow: ellipsis;
 }
