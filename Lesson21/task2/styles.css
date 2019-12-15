@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}
+
+.content {
+	display: flex;
+	min-height: 100vh;
+}
+
+.gallery {
+	display: flex;
+	width: 80%;
+	background-color: #fa5;
+}
+
+.ideas {
+	display: flex;
+	width: 20%;
+	background-color: #5af;
+}
+
+.image {
+	max-width: 100%;
+	margin: auto;
+}
+
+.idea {
+	margin: auto;
+	padding: 4px;	
+	color: #fff;
+	text-transform: uppercase;
+	word-break: nowrap;
+	text-overflow: ellipsis;
+}
