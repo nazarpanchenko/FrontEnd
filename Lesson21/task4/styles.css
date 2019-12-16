@@ -2,9 +2,12 @@
 	box-sizing: border-box;
 }
 
-html, body {
+html, body, h1 {
 	padding: 0;
 	margin: 0;
+	border: 0;
+    outline: 0;
+    vertical-align: baseline;
 }
 
 html {
@@ -20,11 +23,10 @@ html {
 }
 
 h1 {
-	font-size: 32px;
-	line-height: 1.5;
+	padding: 0.5em;
 	text-align: center;
 	color: #fff;
-	background: linear-gradient(to right, red 30%, orange 60%);
+	background: linear-gradient(60deg, red, orange);
 }
 
 .main {
@@ -38,7 +40,7 @@ footer {
 	text-align: center;
 }
 
-.main, .navigation, .news {
+.section, .navigation, .news {
 	padding: 0.5em;
 }
 
@@ -50,20 +52,20 @@ footer {
 	width: 20%;
 }
 
-.nav-list-item {
-	background-color: #808080;
-	color: #fff;
-	height: 2em;
-	padding: 0.5em;
-	margin-bottom: 0.5em;
+.nav-list {
+	padding: 0;
 }
 
-.nav-list-item:last-of-type {
-	margin-bottom: 0;
+.nav-list-item {
+	height: 2em;
+	margin-bottom: 0.5em;
+	background-color: #808080;
+	color: #fff;
 }
 
 .nav-list-link {
 	display: block;
+	padding: 0.5em;
 	text-decoration: none;
 	color: inherit;
 	overflow: hidden;
@@ -81,10 +83,11 @@ footer {
 	text-align: center;
 }
 
-.css-units {
+.units-list {
 	line-height: 1.75em;
-	padding: 0;
-	list-style-type: none;
+}
+
+.css-units {
 	color: #8b0000;
 	background-color: #e5e5e5;
 	font-size: 1.125em;
