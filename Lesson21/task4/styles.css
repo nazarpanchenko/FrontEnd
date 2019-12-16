@@ -20,15 +20,16 @@ html {
 }
 
 h1 {
+	font-size: 32px;
+	line-height: 1.5;
 	text-align: center;
 	color: #fff;
-	background: linear-gradient(to right, red 60%, orange);
+	background: linear-gradient(to right, red 30%, orange 60%);
 }
 
 .main {
 	display: flex;
 	flex-grow: 1;
-	font-size: 1.25em;
 }
 
 footer {
@@ -48,6 +49,7 @@ footer {
 .news {
 	width: 20%;
 }
+
 .nav-list-item {
 	background-color: #808080;
 	color: #fff;
@@ -71,6 +73,7 @@ footer {
 
 .section {
 	width: 60%;
+	font-size: 1.25em;
 }
 
 .section__header {
