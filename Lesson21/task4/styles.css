@@ -58,7 +58,7 @@ footer {
 	display: block;
 	padding: 0.5em;
 	text-decoration: none;
-	color: inherit;
+	color: #fff;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
