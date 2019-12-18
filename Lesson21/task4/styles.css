@@ -49,9 +49,8 @@ footer {
 
 .nav-list-item {
 	height: 2em;
-	line-height: 2em;
 	margin-bottom: 0.5em;
-	background-color: #808080;
+	background-color: grey;
 	color: white;
 	list-style-type: none;
 }
