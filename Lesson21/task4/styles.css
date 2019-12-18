@@ -48,8 +48,8 @@ footer {
 }
 
 .nav-list-item {
-	height: 2em;
-	margin: 0.5em 0;
+	line-height: 2em;
+	margin-bottom: 0.5em;
 	background-color: #808080;
 	color: #fff;
 }
