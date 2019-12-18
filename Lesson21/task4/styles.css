@@ -48,17 +48,19 @@ footer {
 }
 
 .nav-list-item {
+	height: 2em;
 	line-height: 2em;
 	margin-bottom: 0.5em;
 	background-color: #808080;
-	color: #fff;
+	color: white;
+	list-style-type: none;
 }
 
 .nav-list-link {
 	display: block;
 	padding: 0.5em;
 	text-decoration: none;
-	color: #fff;
+	color: white;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
