@@ -14,7 +14,7 @@ body {
 	min-height: 100vh;
 }
 
-h1 {
+.header {
 	text-align: center;
 	color: #fff;
 	background: linear-gradient(60deg, red, orange);
