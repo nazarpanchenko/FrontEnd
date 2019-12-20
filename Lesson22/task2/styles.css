@@ -2,10 +2,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	font-family: "Verdana";
-}
-
 main {
 	display: flex;
 }
@@ -16,6 +12,7 @@ div {
 	flex-grow: 1;
 	justify-content: center;
 	align-items: center;
+	font-family: "Verdana";
 	text-transform: lowercase;
 }
 
