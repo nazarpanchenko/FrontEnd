@@ -53,11 +53,7 @@ span {
 
 
 @media screen and (min-width: 900px) {
-	main {
-		justify-content: flex-start;
-	}
-
-	div {
-		flex-grow: 1;
+	.news {
+		flex-grow: 2;
 	}
 }
