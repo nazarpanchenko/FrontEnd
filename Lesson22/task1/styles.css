@@ -2,25 +2,28 @@
 	box-sizing: border-box;
 }
 
-body {
+.container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
 }
 
-.container {
-	margin: auto;
-}
-
 .square {
 	width: 100px;
 	height: 100px;
 	margin: 8px;
+	background-color: #8a2be2;
 }
 
 @media only screen and (min-width: 600px) {
 	.square {
-		background-color: #8a2be2;
+		background-color: #ff7f50;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+	.container {
+		flex-direction: column;
 	}
 }
