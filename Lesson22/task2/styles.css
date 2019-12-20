@@ -52,6 +52,6 @@ span {
 
 @media screen and (min-width: 900px) {
 	div {
-		width: 33vh;
+		width: 33.33vw;
 	}
 }
