@@ -50,10 +50,8 @@ span {
 	}
 }
 
-
-
 @media screen and (min-width: 900px) {
-	.news {
-		flex-grow: 2;
+	div {
+		width: 33.33%;
 	}
 }
