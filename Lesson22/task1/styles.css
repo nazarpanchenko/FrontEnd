@@ -27,9 +27,4 @@
 	.container {
 		flex-direction: column;
 	}
-
-	.square {
-		margin-left: 0;
-		margin-bottom: 8px; 
-	}
 }
