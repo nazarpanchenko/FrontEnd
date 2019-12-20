@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Verdana";
+}
+
+main {
+	display: flex;
+}
+	
+div {
+	display: flex;
+	height: 200px;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	text-transform: lowercase;
+}
+
+span {
+	display: inline-block;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #faebd7;
+}
+	
+.navigation {
+	background-color: #ff7f50;
+}
+
+.products-list {
+	background-color: #006400;
+}
+
+.news {
+	background-color: #0ff;
+}
+
+@media screen and (max-width: 599px) {
+	main {
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+	main {
+		min-height: 100vh;
+		flex-direction: column;
+	}
+
+	.news {
+		flex-grow: 2;
+	}
+}
