@@ -20,7 +20,6 @@ div {
 }
 
 span {
-	display: inline-block;
 	padding: 8px;
 	border-radius: 4px;
 	background-color: #faebd7;
@@ -46,11 +45,10 @@ span {
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
 	main {
-		min-height: 100vh;
-		flex-direction: column;
+		flex-wrap: wrap;
 	}
 
 	.news {
-		flex-grow: 2;
+		width: 100%;
 	}
 }
