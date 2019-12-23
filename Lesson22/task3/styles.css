@@ -1,3 +1,14 @@
 * {
 	box-sizing: border-box;
 }
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
