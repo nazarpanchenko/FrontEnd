@@ -34,7 +34,7 @@ button {
 
 .nav-list-item {
 	height: 2em;
-	margin: 0.5em;
+	margin-bottom: 0.5em;
 	background-color: #808080;
 	color: white;
 }
@@ -49,12 +49,12 @@ button {
 	text-overflow: ellipsis;
 }
 
-.navigation {
-	width: 20%;
-}
-
 main {
 	display: flex;
+}
+
+.navigation {
+	width: 20%;
 }
 
 @media screen and (max-width: 599px) {
