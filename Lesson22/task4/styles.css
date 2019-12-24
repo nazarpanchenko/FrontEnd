@@ -34,7 +34,7 @@ button {
 
 .nav-list-item {
 	height: 2em;
-	margin-bottom: 0.5em;
+	margin: 0.5em;
 	background-color: #808080;
 	color: white;
 }
