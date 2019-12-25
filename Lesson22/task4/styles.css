@@ -54,7 +54,7 @@ main {
 }
 
 .navigation {
-	width: 20vw;
+	width: 20%;
 }
 
 @media screen and (max-width: 599px) {
