@@ -11,3 +11,8 @@ picture {
 	height: auto;
 	margin: auto;
 }
+
+img {
+	display: block;
+	height: auto;
+}
