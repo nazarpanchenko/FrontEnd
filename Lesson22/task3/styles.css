@@ -4,11 +4,10 @@
 
 body {
 	display: flex;
-	justify-content: center;
 }
 
-img {
-	display: block;
+picture {
 	max-width: 100%;
 	height: auto;
+	margin: auto;
 }
