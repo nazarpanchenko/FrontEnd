@@ -6,8 +6,9 @@ body {
 	display: flex;
 }
 
-img, picture {
+picture {
 	display: block;
 	max-width: 100%;
+	height: auto;
 	margin: auto;
 }
