@@ -2,12 +2,21 @@
 	box-sizing: border-box;
 }
 
+
 main {
 	display: flex;
 }
 
-picture {
-	max-width: 100%;
+img, picture {
 	height: auto;
 	margin: 0 auto;
+}
+
+picture {
+	width: 100%;
+}
+
+img {
+	display: block;
+	max-width: 100%;
 }
