@@ -87,3 +87,45 @@ footer {
 	font-size: 1.125em;
 	font-weight: 700;
 }
+
+@media screen and (max-width: 599px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.section, .navigation, .news {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+	.main {
+		flex-wrap: wrap;
+	}
+
+	.navigation {
+		width: 20%;
+	}
+
+	.section {
+		flex-grow: 1;
+	}
+
+	.news {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.navigation {
+		width: 20%;
+	}
+
+	.news {
+		width: 20%;
+	}
+
+	.section {
+		width: 60%;
+	}
+}
