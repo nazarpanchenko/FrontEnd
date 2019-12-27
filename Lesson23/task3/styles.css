@@ -17,14 +17,17 @@
 }
 .menu__item {
   display: inline-block;
-  padding: 16px 8px;
+  padding: 16px 4px;
 }
 .menu__item:hover {
   background-color: #9acd32;
-  color: #FBFA29;
 }
 .menu__item_active {
   position: relative;
+  color: #FBFA29 !important;
+}
+.menu__item_active:hover > .submenu {
+  visibility: visible;
 }
 
 .submenu {
@@ -33,6 +36,7 @@
   padding: 0;
   top: 100%;
   z-index: 1;
+  visibility: hidden;
   background-color: #ff7f50;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   list-style-type: none;
