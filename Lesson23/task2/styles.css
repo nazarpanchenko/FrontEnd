@@ -1,20 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.square {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 8px;
-}
-
 @media screen and (max-width: 600px) {
   .square {
     background-color: #ff7f50;
@@ -34,6 +17,27 @@ body {
   .square {
     background-color: #c47;
   }
+}
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */

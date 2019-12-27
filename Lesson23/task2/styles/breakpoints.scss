@@ -1,0 +1,29 @@
+@media screen and (max-width: 600px) {
+    .square {
+        background-color: #ff7f50;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+    .square {
+        background-color: #8a2be2;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    .square {
+        background-color: #a61;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .square {
+        background-color: #c47;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .container {
+        flex-direction: column;
+    }
+}
