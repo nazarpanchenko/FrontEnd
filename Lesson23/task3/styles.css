@@ -6,24 +6,24 @@
 }
 
 .menu {
+  display: flex;
   margin-left: 8px;
   text-transform: uppercase;
 }
 .menu li {
   color: #fff;
   cursor: pointer;
+  list-style-type: none;
 }
 .menu__item {
-  display: inline-block;
   padding: 15px 8px;
-  margin-right: -4px;
 }
 .menu__item:hover {
   background-color: #9acd32;
 }
 .menu__item_active {
   position: relative;
-  color: #FBFA29 !important;
+  color: #FBFF09 !important;
 }
 .menu__item_active:hover > .submenu {
   visibility: visible;
@@ -38,7 +38,6 @@
   visibility: hidden;
   background-color: #ff7f50;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-  list-style-type: none;
 }
 .submenu__item {
   padding: 16px 8px;
