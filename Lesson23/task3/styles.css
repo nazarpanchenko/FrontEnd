@@ -6,24 +6,26 @@
 }
 
 .menu {
-  display: flex;
   margin-left: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
   text-transform: uppercase;
 }
 .menu li {
-  color: #fff;
   cursor: pointer;
   list-style-type: none;
 }
 .menu__item {
+  display: inline-block;
   padding: 15px 8px;
+  color: #fff;
 }
 .menu__item:hover {
   background-color: #9acd32;
 }
 .menu__item_active {
   position: relative;
-  color: #FBFF09 !important;
+  color: #FBFF09;
 }
 .menu__item_active:hover > .submenu {
   visibility: visible;
@@ -41,6 +43,7 @@
 }
 .submenu__item {
   padding: 16px 8px;
+  color: #fff;
 }
 .submenu__item:hover {
   color: #000;
