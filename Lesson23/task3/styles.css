@@ -17,7 +17,7 @@
 }
 .menu__item {
   display: inline-block;
-  padding: 16px 4px;
+  padding: 16px 8px;
 }
 .menu__item:hover {
   background-color: #9acd32;
