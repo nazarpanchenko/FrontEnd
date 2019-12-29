@@ -6,7 +6,6 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
   height: 200px;
   text-transform: lowercase;
 }
@@ -33,10 +32,18 @@ span {
   body {
     flex-direction: column;
   }
+
+  div {
+    flex-grow: 1;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 899px) {
   body {
     flex-wrap: wrap;
+  }
+
+  div {
+    flex-grow: 1;
   }
 
   .navigation, .products-list {
@@ -49,7 +56,7 @@ span {
 }
 @media screen and (min-width: 900px) {
   div {
-    width: 33.33vw;
+    flex-grow: 1;
   }
 }
 * {
