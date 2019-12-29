@@ -6,7 +6,7 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
   height: 200px;
   text-transform: lowercase;
 }
@@ -33,18 +33,10 @@ span {
   body {
     flex-direction: column;
   }
-
-  div {
-    flex-basis: auto;
-  }
 }
 @media screen and (min-width: 600px) and (max-width: 899px) {
   body {
     flex-wrap: wrap;
-  }
-
-  div {
-    flex: 1 0 auto;
   }
 
   .navigation, .products-list {
@@ -53,6 +45,11 @@ span {
 
   .news {
     width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  div {
+    flex: 1;
   }
 }
 * {
