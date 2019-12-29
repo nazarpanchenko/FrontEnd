@@ -32,18 +32,10 @@ span {
   body {
     flex-direction: column;
   }
-
-  div {
-    flex-grow: 1;
-  }
 }
 @media screen and (min-width: 600px) and (max-width: 899px) {
   body {
     flex-wrap: wrap;
-  }
-
-  div {
-    flex-grow: 1;
   }
 
   .navigation, .products-list {
@@ -51,7 +43,7 @@ span {
   }
 
   .news {
-    width: 100%;
+    flex-grow: 1;
   }
 }
 @media screen and (min-width: 900px) {
