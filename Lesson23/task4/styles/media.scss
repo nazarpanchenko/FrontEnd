@@ -1,0 +1,27 @@
+@media screen and (max-width: 599px) {
+    body {
+        flex-direction: column;
+    }
+
+    div {
+        flex-basis: auto;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+   body {
+       flex-wrap: wrap;
+   }
+
+   div {
+       flex: 1 0 auto;
+   }
+
+   .navigation, .products-list {
+       width: 50%;
+   }
+
+   .news {
+       width: 100%;
+   }
+}
