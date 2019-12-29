@@ -6,6 +6,7 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   height: 200px;
   text-transform: lowercase;
 }
@@ -41,14 +42,10 @@ span {
   .navigation, .products-list {
     width: 50%;
   }
-
-  .news {
-    flex-grow: 1;
-  }
 }
 @media screen and (min-width: 900px) {
   div {
-    flex-grow: 1;
+    flex: 1;
   }
 }
 * {
