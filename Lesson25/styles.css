@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Hairline"), local("Montserrat-Hairline"), url("fonts/montserrathairline.woff2") format("woff2"), url("fonts/montserrathairline.woff") format("woff"), url("fonts/montserrathairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("fonts/montserratlight.woff2") format("woff2"), url("fonts/montserratlight.woff") format("woff"), url("fonts/montserratlight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), local("Montserrat-Regular"), url("fonts/montserrat.woff2") format("woff2"), url("fonts/montserrat.woff") format("woff"), url("fonts/montserrat.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("fonts/montserratbold.woff2") format("woff2"), url("fonts/montserratbold.woff") format("woff"), url("fonts/montserratbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Black"), local("Montserrat-Black"), url("fonts/montserratblack.woff2") format("woff2"), url("fonts/montserratblack.woff") format("woff"), url("fonts/montserratblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.price-card {
+  position: relative;
+  width: 380px;
+  min-height: 770px;
+  padding: 30px 0 42px;
+  background-color: #334247;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+  overflow: hidden;
+}
+.price-card:not(:last-child) {
+  margin-right: 15px;
+}
+.price-card__title {
+  margin-bottom: 36px;
+  line-height: 0.75;
+  font-size: 35px;
+  font-weight: bold;
+}
+.price-card__title span {
+  font-size: 20px;
+  font-weight: 200;
+}
+.price-card .price-card__price {
+  padding: 18px 0 19px;
+  line-height: 67px;
+  font-size: 55px;
+  font-weight: bold;
+}
+.price-card__description {
+  padding: 19px 26px 42px;
+  line-height: 18px;
+  font-size: 15px;
+  font-weight: 200;
+}
+.price-card .rectangle {
+  position: absolute;
+  top: 27px;
+  right: -31px;
+  width: 147px;
+  height: 25px;
+  line-height: 17px;
+  padding: 4px 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #DC3F45;
+  transform: rotate(45deg);
+}
+
+.website {
+  background-color: #5BB189;
+}
+
+.business {
+  background-color: #3A6BA5;
+}
+
+.webshop {
+  background-color: #EC632A;
+}
+
+.price-card__options-list {
+  padding: 0;
+  list-style-type: none;
+  font-weight: 200;
+}
+.price-card__options-list_item {
+  position: relative;
+  padding: 16px 21px 16px 58px;
+  line-height: 18px;
+  text-align: left;
+}
+.price-card__options-list_item:nth-child(odd) {
+  background-color: rgba(42, 52, 56, 0.5);
+  mix-blend-mode: normal;
+}
+.price-card__options-list_item:before {
+  position: absolute;
+  top: 19px;
+  left: 22px;
+}
+
+.website-item:before {
+  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
+}
+
+.business-item:before {
+  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png");
+}
+
+.webshop-item:before {
+  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
+}
+
+.price-card__order-btn {
+  width: 154px;
+  margin-top: 37px;
+  padding: 11px 0 12px;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.business-btn {
+  background-color: #5BB189;
+}
+
+.website-btn {
+  background-color: #3A6BA5;
+}
+
+.webshop-btn {
+  background-color: #EC632A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+/*# sourceMappingURL=styles.css.map */

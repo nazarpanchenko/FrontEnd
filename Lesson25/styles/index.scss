@@ -1,0 +1,14 @@
+@import "fonts.scss";
+@import "content.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
