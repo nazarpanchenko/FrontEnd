@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.page {
+    width: 1400px;
+    margin: auto;
+}
+
+.top {
+    min-height: 710px;
+    padding-top: 39px;
+    background: #F3C6BD;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    width: 1140px;
+    height: 62px;
+    margin: auto;
+    font-size: 18px;
+    color: #2B292D;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.logo-text__name {
+    font-weight: 700;
+}
+
+.navigation {
+    margin-left: auto;
+    margin-top: 7px;
+    margin-right: 75px;
+}
+
+.navigation-list {
+   margin: 0;
+   list-style-type: none;
+}
+
+.navigation-list__item {
+    display: inline-block;
+}
+
+.navigation-list__item:not(:last-of-type) {
+    margin-right: 50px;
+}
+
+.navigation-list__item_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.active-item {
+    font-weight: bold;
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 8px;
+    height: 5px;
+    margin-left: 11px;
+    background-image: url('img/arrow.png');
+}
+
+.send-btn {
+    width: 160px;
+    height: 48px;
+    border: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.navigation__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 58px;
+    height: 64px;
+}
+
+.navigation__toggle_btn {
+    display: block;
+    width: 18px;
+    height: 13px;
+    margin: auto;
+    background-image: url('img/shape.png');
+    cursor: pointer;
+}
+
+.headline {
+    position: relative;
+    width: 1249px;
+    margin: auto;
+    margin-top: 76px;
+    z-index: 1;
+}
+
+h1 {
+    width: 754px;
+    max-width: 100%;
+    margin-top: 8px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.headline__description {
+    width: 456px;
+    max-width: 100%;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.headline__img {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.learn-btn {
+    width: 158px;
+    height: 48px;
+    margin-left: 10px;
+    border: none;
+    background: #fff;
+    font-weight: 700;
+    border-radius: 2px;
+    color: #3040C4;
+    cursor: pointer;
+}

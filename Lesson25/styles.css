@@ -25,15 +25,15 @@ main {
 .price-card:not(:last-child) {
   margin-right: 15px;
 }
-.price-card .rectangle {
+.price-card .badge {
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  top: 18px;
-  right: -18px;
+  top: 27px;
+  right: -28px;
   width: 147px;
   height: 25px;
+  justify-content: center;
+  align-items: center;
   line-height: 17px;
   font-size: 14px;
   font-style: normal;
@@ -44,16 +44,12 @@ main {
   transform: rotate(45deg);
 }
 .price-card__title {
-  margin: 0 auto 36px;
+  margin: 0 auto;
   line-height: 43px;
   font-size: 35px;
   font-style: normal;
   font-weight: bold;
   text-align: center;
-}
-.price-card__title span {
-  font-size: 20px;
-  font-weight: 300;
 }
 .price-card__title.website-title {
   width: 100px;
@@ -63,6 +59,13 @@ main {
 }
 .price-card__title.webshop-title {
   width: 173px;
+}
+.price-card__subtitle {
+  margin-bottom: 36px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
 }
 .price-card__price {
   padding: 18px 0 19px;

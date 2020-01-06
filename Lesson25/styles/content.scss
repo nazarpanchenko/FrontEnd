@@ -26,15 +26,15 @@ main {
         margin-right: 15px;
     }
 
-    .rectangle {
+    .badge {
         display: flex;
-        justify-content: center;
-        align-items: center;
         position: absolute;
-        top: 18px;
-        right: -18px;
+        top: 27px;
+        right: -28px;
         width: 147px;
         height: 25px;
+        justify-content: center;
+        align-items: center;
         line-height: 17px;
         font-size: 14px;
         font-style: normal;
@@ -46,17 +46,12 @@ main {
     }
 
     &__title {
-        margin: 0 auto 36px;
+        margin: 0 auto;
         line-height: 43px;
         font-size: 35px;
         font-style: normal;
         font-weight: bold;
         text-align: center;
-
-        span {
-            font-size: 20px;
-            font-weight: 300;
-        }
 
         &.website-title {
             width: 100px;
@@ -69,6 +64,14 @@ main {
         &.webshop-title {
             width: 173px;
         }
+    }
+
+    &__subtitle {
+        margin-bottom: 36px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        text-align: center;
     }
 
     &__price {
@@ -91,7 +94,6 @@ main {
         &.webshop-bg {
             background-color: #EC632A;
         }
-        
     }
 
     &__description {

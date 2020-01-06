@@ -1,0 +1,61 @@
+@media screen and (max-width: 1200px) {
+    .top {
+        padding: 0;
+    }
+
+    .page {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        padding: 8px 15px;
+        background: #fff;
+    }
+
+    .logo-img {
+        width: 48px;
+        height: 48px;
+        margin-right: 13px;
+    }
+
+    .logo-text__description, .navigation, .navigation__btn {
+        display: none;
+    }
+
+    .navigation__toggle {
+        display: flex;
+        align-items: center;
+        border-left: 1px solid #E8E8E8;
+    }
+
+    .headline {
+        width: 100%;
+        margin-top: 35px;
+        padding: 0;
+    }
+
+    .headline__title {
+        padding: 0 15px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .headline__description {
+        padding: 0 15px;
+        margin-top: 24px;
+    }
+
+    .headline__img {
+       position: static;
+       margin-top: 33px;
+    }
+
+    .navigation__btn, .headline__btn {
+        width: 100%;
+    }
+
+    .headline__btn {
+        margin-top: 15px;
+    }
+}
