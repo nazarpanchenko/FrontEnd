@@ -1,4 +1,4 @@
-@import "content.scss";
+@import "main.scss";
 
 * {
     box-sizing: border-box;
@@ -6,8 +6,26 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 body {
     background-color: #000;
+    color: #fff;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 1170px;
+    min-height: 770px;
+    margin: auto;
+    padding-top: 18px;
 }
