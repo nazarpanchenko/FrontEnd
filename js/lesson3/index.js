@@ -3,7 +3,7 @@
 console.log("+17: ", +17);
 
 +'77';
-console.log("+\'77\: ", +'77');
+console.log("+\'77\': ", +'77');
 
 // Бинарный плюс складывает строки или прибавляет числа
 10 + '5';
@@ -39,7 +39,7 @@ console.log('num: ', num);
 console.log('++num: ', num);
 
 num++;
-console.log('num++: ', num++);
+console.log('num++ : ', num);
 
 // математические операторы приводят операнды к числам
 const a = 17;
