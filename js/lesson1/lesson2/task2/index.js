@@ -26,3 +26,4 @@ console.log('i: ', typeof i);
 console.log('j: ', typeof j);
 console.log('k: ', typeof k);
 console.log('l: ', typeof l);
+console.log('m: ', typeof m);
