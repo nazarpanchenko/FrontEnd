@@ -1,11 +1,10 @@
 let m = 1,
     n = 10,
-    result = 0;
+    result = 1;
 
 for (let i = m; m <= n; m++) {
-    if (i % 2 == 0) {
-        result += m * n;
+    if (i % 2) {
+        result = (m * n);
+        console.log('Result: ' + result);
     }
 }
-
-console.log('Result: ' + result);
