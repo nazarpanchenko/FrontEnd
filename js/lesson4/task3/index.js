@@ -3,8 +3,7 @@ let m = 1,
     result = 1;
 
 for (let i = m; m <= n; m++) {
-    if (i % 2) {
-        result = (m * n);
-        console.log('Result: ' + result);
-    }
+    if (i % 2) result = m * n;
 }
+
+console.log('Result: ' + result);
