@@ -4,6 +4,5 @@ let m = 1,
 
 for (let i = m; i <= n; i++) {
     if (i % 2) result = m * n;
+    console.log('Result: ' + result);
 }
-
-console.log('Result: ' + result);
