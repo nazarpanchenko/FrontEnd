@@ -15,7 +15,7 @@ if (null) {
 }
 
 let age = 18;
-let amount = 20;
+let amount = 15;
 
 
 if (age < 16) {
