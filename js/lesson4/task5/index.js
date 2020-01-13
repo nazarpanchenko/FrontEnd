@@ -16,7 +16,7 @@ for (let i = m; i <= n; i++) {
         continue;  
     }
 
-    if (i % 2 == 0 || i % 4 != 0 || i % 3 == 0 || i % 4 == 0) {
+    if (i % 5 == 0 && i % 2 == 0 || i % 4 != 0 || i % 3 == 0 || i % 4 == 0) {
         console.log(i);
     }
 }
