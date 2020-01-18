@@ -1,6 +1,7 @@
-const getPrime = (num) => {
+const getPrimes = (num) => {
     nextPrime:
-    for (let i = 2; i <= num; i++) { 
+    for (let i = 2; i <= num; i++) {
+         
         for (let j = 2; j < i; j++) { 
             if (i % j == 0) continue nextPrime;
         }
@@ -9,4 +10,4 @@ const getPrime = (num) => {
     }
 }
 
-getPrime(10);
+getPrimes(10);
