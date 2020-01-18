@@ -3,7 +3,7 @@ function getArrayBounds(arr) {
         return null;
     }
 
-    return [arr.length, arr[0], arr[length - 1]];
+    return [arr.length, arr[0], arr[arr.length - 1]];
 }
 
-const arrayBounds = getArrayBounds([1, 2, 3, 4, 5, 6]);
+getArrayBounds([1, 2, 3, 4, 5, 6]);
