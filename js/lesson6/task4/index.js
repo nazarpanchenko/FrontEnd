@@ -1,5 +1,7 @@
-function sum (a, b) {
-    return a + b;
+function swap(arr) {
+    const [start, ...rest] = arr;
+
+    return [...rest, start];
 }
 
-getSum(2, 3);
+swap([11, 22, 33, 56, 66]);
