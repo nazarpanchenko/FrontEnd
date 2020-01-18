@@ -1,4 +1,4 @@
-function getArrayBound(arr) {
+function getArrayBounds(arr) {
     if (!Array.isArray(arr)) {
         return null;
     }
@@ -6,4 +6,4 @@ function getArrayBound(arr) {
     return [arr.length, arr[0], arr[length - 1]];
 }
 
-const arrayBound = getArrayBound([1, 2, 3, 4, 5, 6]);
+const arrayBounds = getArrayBounds([1, 2, 3, 4, 5, 6]);
