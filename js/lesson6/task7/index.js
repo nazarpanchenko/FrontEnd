@@ -1,4 +1,4 @@
-function sortAsc(array) {
+function sortAsc(arr) {
     let sortedArr = [];
 
     for (let i = 0; i < arr.length; i++) {
@@ -8,8 +8,8 @@ function sortAsc(array) {
     for (let j = 0, endJ = arr.length - 1; j < endJ; j++) {
         let wasSwap = false;
 
-        for (let k = 0, endK = endK - k; j < endK; k++) {
-            if (arr[k] > arr[k + 1]) {
+        for (let k = 0, endK = endJ - j; k < endK; k++) {
+            if (sortedArr[k] > sortedArr[k + 1]) {
                 [sortedArr[k], sortedArr[k + 1]] = [sortedArr[k + 1], sortedArr[k]];
                 wasSwap = true;
             }
@@ -17,6 +17,8 @@ function sortAsc(array) {
 
         if (!wasSwap) break;
     }
+
+    console.log(sortedArr);
      
     return sortedArr;
 }
@@ -27,4 +29,4 @@ function sortDesc(array) {
 
 }
 
-sortAsc();
+sortAsc([6, 0, 13, 28, 14, 5, 82, 9]);
