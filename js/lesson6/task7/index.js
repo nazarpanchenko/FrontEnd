@@ -24,7 +24,7 @@ function sortAsc(arr) {
 function sortDesc(arr) {
     let sortedArr = [];
 
-    for (let i = arr.length - 1; i < arr.length; i++) {
+    for (let i = arr.length - 1; i >= 0; i--) {
         sortedArr.push(arr[i]);
     }
 
