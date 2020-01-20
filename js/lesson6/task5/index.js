@@ -8,7 +8,7 @@ function squareArray(arr) {
     }
 
     for (let j = 0; j < newArr.length; j++) {
-        newArr[i] *= newArr[j];
+        newArr[j] *= newArr[j];
     }
 
     return newArr;
