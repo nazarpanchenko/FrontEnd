@@ -1,5 +1,5 @@
 function squareArray(arr) {
-    if (!isArray(arr)) return null;
+    if (!Array.isArray(arr)) return null;
 
     for (let i = 0; i < arr.length; i++) {
         arr[i] *= arr[i];
