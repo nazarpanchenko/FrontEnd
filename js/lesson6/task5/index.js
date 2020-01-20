@@ -1,11 +1,17 @@
 function squareArray(arr) {
     if (!Array.isArray(arr)) return null;
 
+    let newArr = [];
+
     for (let i = 0; i < arr.length; i++) {
-        arr[i] *= arr[i];
+        newArr.push(arr[i]);
     }
 
-    return arr;
+    for (let j = 0; j < newArr.length; j++) {
+        newArr[i] *= newArr[i];
+    }
+
+    return newArr;
 }
 
 squareArray([3, 6, 9, 15, 18]);
