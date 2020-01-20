@@ -1,5 +1,5 @@
-function sum (a, b) {
-    return a + b;
+function uniqueSum(array) {
+    return array.filter();
 }
 
-getSum(2, 3);
+uniqueSum([3, 1, 13, 9, 4, 31, 23, 2]);
