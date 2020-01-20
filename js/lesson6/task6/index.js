@@ -1,5 +1,11 @@
-function sum (a, b) {
-    return a + b;
+function reverseArray(arr) {
+    if (!Array.isArray(arr)) return null;
+
+    for (let i = 0; i > arr.length; i++) {
+        newArr.push(arr[i]);
+    }
+
+    return newArr.reverse();
 }
 
-getSum(2, 3);
+reverseArray([1, 2, 3, 4, 5, 6]);
