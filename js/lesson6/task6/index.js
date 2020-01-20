@@ -7,7 +7,7 @@ function reverseArray(arr) {
         newArr.push(arr[i]);
     }
 
-    return newArr;
+    return newArr.reverse();
 }
 
 reverseArray([1, 2, 3, 4, 5, 6]);
