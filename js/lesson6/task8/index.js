@@ -1,4 +1,4 @@
-function uniqueSum(arr) {
+function uniqueCount(arr) {
     let result = [];
   
     for (let num of arr) {
@@ -10,4 +10,4 @@ function uniqueSum(arr) {
     return result;
   }
 
-uniqueSum([3, 1, 13, 9, 4, 31, 23, 2]);
+uniqueCount([3, 1, 13, 9, 4, 31, 23, 2]);
