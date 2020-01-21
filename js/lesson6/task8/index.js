@@ -1,9 +1,11 @@
-function uniqueCount(arr) {
-    let result = [];
+function uniqueCount(array) {
+    let newArr = [],
+        result = 0;
   
-    for (let num of arr) {
-      if (!result.includes(num)) {
-        result.push(num);
+    for (let number of array) {
+      if (!newArr.includes(number)) {
+        newArr.push(number);
+        ++result;
       }
     }
   
