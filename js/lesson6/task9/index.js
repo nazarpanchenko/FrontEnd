@@ -2,7 +2,7 @@ function removeDuplicates(array) {
     let result = [];
   
     for (let i = 0; i < array.length; i++) {
-      if (!result.includes(arr[i])) {
+      if (!result.includes(array[i])) {
         result.push(number);
       } else {
           result.splice(i, 1);
