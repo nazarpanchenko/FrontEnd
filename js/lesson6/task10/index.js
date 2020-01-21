@@ -1,5 +1,11 @@
-function sum (a, b) {
-    return a + b;
+function cloneArr(arr) {
+    let clonedArr = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        clonedArr.push(arr[i]);
+    }
+
+    return clonedArr;
 }
 
-getSum(2, 3);
+cloneArr([6, 2, 9, 1, 23, 21, 16, 2]);
