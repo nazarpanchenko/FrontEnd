@@ -3,7 +3,7 @@ function removeDuplicates(array) {
   
     for (let i = 0; i < array.length; i++) {
       if (!result.includes(array[i])) {
-        result.push(number);
+        result.push(array[i]);
       } else {
           result.splice(i, 1);
       }
