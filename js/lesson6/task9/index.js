@@ -1,13 +1,11 @@
 function removeDuplicates(array) {
     let result = [];
-
-    for (let i = 0; i < array.length; i++) {
-        result.push(array[i]);
-    }
   
-    for (let number of result) {
-      if (result.includes(number)) {
-        result.pop(number);
+    for (let i = 0; i < array.length; i++) {
+      if (!result.includes(arr[i])) {
+        result.push(number);
+      } else {
+          result.splice(i, 1);
       }
     }
   
