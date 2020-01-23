@@ -5,7 +5,7 @@ function withdraw(clients, balances, client, amount) {
         if (clients[i] == client) clientID = i;
     }
 
-    return amount > balances[clientID] ? -1 : balances[i] - amount;
+    return amount > balances[clientID] ? -1 : balances[clientID] - amount;
 }
 
 withdraw(['Mark', 'Peter', 'Anthon', 'Carl'], [1250, 1000, 650, 880], 'Peter', 2000);
