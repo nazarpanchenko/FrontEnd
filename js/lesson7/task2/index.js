@@ -1,11 +1,11 @@
 function sortDesc(arr) {
     const copy = [...arr];
-    
-    arr.sort(function(a, b) {
+
+    copy.sort(function(a, b) {
         return b - a;
     });
 
-    return arr;
+    return copy;
 }
 
 sortDesc([1, 2, 4, 6, 8, 10]);
