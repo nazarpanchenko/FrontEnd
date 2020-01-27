@@ -6,4 +6,4 @@ function sortDesc(arr) {
     return arr;
 }
 
-sortArray([1, 2, 4, 6, 8, 10]);
+sortDesc([1, 2, 4, 6, 8, 10]);
