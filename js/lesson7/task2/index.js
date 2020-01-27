@@ -1,4 +1,6 @@
 function sortDesc(arr) {
+    const copy = [...arr];
+    
     arr.sort(function(a, b) {
         return b - a;
     });
