@@ -1,4 +1,4 @@
-const getMessagesForPassedStudents = (allStudents, failedStudents) => {
+const getMessagesForBestStudents = (allStudents, failedStudents) => {
     const passedStudents= allStudents
         .filter(name => !(failedStudents.includes(name)));
 
@@ -6,4 +6,4 @@ const getMessagesForPassedStudents = (allStudents, failedStudents) => {
         .map(name => 'Good Job, ' + name);
 };
 
-console.log(getMessagesForPassedStudents(['Mark', 'John', 'Dave'], ['Anthony', 'John', 'Mark']));
+console.log(getMessagesForBestStudents(['Mark', 'John', 'Dave'], ['Anthony', 'John', 'Mark']));
