@@ -4,7 +4,7 @@ function squareArray(arr) {
     let result = [];
 
     result.filter(function(num) {
-        return num * 2;
+        return num * num;
     });
 
     return result;
