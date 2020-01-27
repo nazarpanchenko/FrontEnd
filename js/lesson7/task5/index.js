@@ -4,7 +4,9 @@ function squareArray(arr) {
     let result = [];
 
     arr.forEach((num, arr) => {
-        result.push(num * num);
+        result.filter(num => {
+            return num * num;
+        });
     });
 
     return result;
