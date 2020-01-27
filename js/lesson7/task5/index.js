@@ -4,10 +4,12 @@ function squareArray(arr) {
     let result = [];
 
     arr.forEach((num, arr) => {
-        result.push(num * num);
+        result.push(num);
     });
 
-    return result;
+    return result.filter(num => {
+        return num * num;
+    });
 }
 
 squareArray([1, 2, 3, 4, 5 ,6]);
