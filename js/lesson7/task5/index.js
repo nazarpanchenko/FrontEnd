@@ -1,7 +1,9 @@
 function squareArray(arr) {
-    if (!isArray(arr)) return null;
+    if (!Array.isArray(arr)) return null;
 
-    let result = arr.filter(function(num) {
+    let result = [];
+
+    result.filter(function(num) {
         return num * 2;
     });
 
