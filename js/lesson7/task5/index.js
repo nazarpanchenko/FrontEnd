@@ -3,7 +3,7 @@ function squareArray(arr) {
 
     let result = arr.slice();
 
-    return result.filter(num => {
+    return result.map(num => {
         return num * num;
     });
 }
