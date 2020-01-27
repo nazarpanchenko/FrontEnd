@@ -1,7 +1,9 @@
-function reverseArray(arr) {
-    if (!Array.isArray(arr)) return null;
+function flatArray(arr) {
+    const copy = [...arr];
 
-    return arr.slice().reverse();
+    return copy.reduce(function(acc, num) {
+        return acc.concat(num);
+    }, []);
 }
 
-reverseArray([1, 2, 3, 4, 5, 6]);
+flatArray([1, [2,, 1, 6], 3, 4, [6, 2, 1, 4], 8]);
