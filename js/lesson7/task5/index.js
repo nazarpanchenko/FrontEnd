@@ -3,9 +3,8 @@ function squareArray(arr) {
 
     let result = [];
 
-    result.forEach((num, arr) => {
-        result.push(num);
-        return num * num;
+    arr.forEach((num, arr) => {
+        result.push(num * num);
     });
 
     return result;
