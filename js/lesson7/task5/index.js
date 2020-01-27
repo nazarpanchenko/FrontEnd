@@ -3,7 +3,8 @@ function squareArray(arr) {
 
     let result = [];
 
-    result.filter(function(num) {
+    result.forEach((num, arr) => {
+        result.push(num);
         return num * num;
     });
 
