@@ -13,8 +13,6 @@ const getSpecialNumbers = numbers => {
        }
    });
 
-    numbers.forEach(checkIfSpecialNumber());
-
     return specialNumbers;
 };
 
