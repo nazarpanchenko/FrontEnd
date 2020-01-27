@@ -3,10 +3,8 @@ function squareArray(arr) {
 
     let result = [];
 
-    arr.forEach((num, arr) => {
-        result.filter(num => {
-            return num * num;
-        });
+    arr.filter(num => {
+        return num * num;
     });
 
     return result;
