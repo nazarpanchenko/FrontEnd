@@ -3,7 +3,7 @@ const getMessagesForBestStudents = (allStudents, failedStudents) => {
         .filter(name => !failedStudents.includes(name));
 
     return passedStudents
-        .map(name => 'Good Job, ' + name);
+        .map(name => 'Good job, ' + name);
 };
 
-console.log(getMessagesForBestStudents(['Mark', 'John', 'Dave'], ['Anthony', 'John', 'Mark']));
+console.log(getMessagesForBestStudents(['Mark', 'Anthony',  'John', 'Dave'], ['John', 'Mark']));
