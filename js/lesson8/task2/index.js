@@ -3,8 +3,8 @@ const concatProps = obj => {
 
     if (Object.keys(obj).length == 0) return [];
 
-    for (let key in user) {
-        arr.push(user[key]);
+    for (let key in obj) {
+        arr.push(obj[key]);
     }
 
     return arr;
