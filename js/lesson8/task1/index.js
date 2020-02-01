@@ -3,8 +3,8 @@ function transformToObject(arr) {
 
     let result = {};
 
-    arr.forEach(function(item, i, arr) {
-        result[i] = item;
+    arr.forEach(function(item, arr) {
+        result[item] = item;
     });
 
     return result;
