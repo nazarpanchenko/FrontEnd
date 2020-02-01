@@ -9,6 +9,8 @@ const pickProps = (obj, keys) => {
         if (result.hasOwnProperty(el)) result[el] = el;
     }
 
+    console.log(result);
+
     return Object.keys(result).length == 0 ? {} : result;
 };
 
@@ -19,6 +21,6 @@ const obj = {
     d: 4
 };
 
-const keys = ['a', 'b'];
+const keys = ['a', 'b', 'e'];
 
 pickProps(obj, keys);
