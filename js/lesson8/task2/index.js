@@ -1,8 +1,10 @@
 const concatProps = obj => {
     let arr = [];
 
+    if (Object.keys(obj).length == 0) return [];
+
     for (let key in user) {
-        arr.push(user[key])
+        arr.push(user[key]);
     }
 
     return arr;
@@ -13,4 +15,4 @@ const user = {
     key: 17
 };
 
-concatProps(user);
+console.log(concatProps(user));
