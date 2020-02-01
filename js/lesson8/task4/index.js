@@ -14,4 +14,4 @@ const people = {
     'Bob' : 18
 };
 
-getAdults(adults);
+getAdults(people);
