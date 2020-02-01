@@ -2,11 +2,7 @@ const pickProps = (obj, keys) => {
     let result = {};
 
     for (let el of keys) {
-        if (result.hasOwnProperty(el)) result[el] = el;
-    }
-
-    for (let key in obj) {
-        if (!result.hasOwnProperty(key)) result[key] = key;
+        if (!result.hasOwnProperty(el) && obj.hasOwnProperty(el)) result[el] = obj[el];
     }
 
     return Object.keys(result).length == 0 ? {} : result;
