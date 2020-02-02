@@ -5,7 +5,7 @@ const getAdults = people => {
         if (people[person] >= 18) result.push(person);
     }
 
-    return Object.keys(result).length == 0 ? {} : result;
+    return Object.keys(people).length == 0 ? {} : people;
 };
 
 const people = {
