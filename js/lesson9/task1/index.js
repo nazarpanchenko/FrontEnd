@@ -4,7 +4,7 @@ const users = {
     'Bob' : 18
 };
 
-const getAdults = usersObj => result = Object.entries(usersObj)
+const getAdults = usersObj => Object.entries(usersObj)
     .filter(user => user[1] >= 18)
     .map(user => user[0]);
 
