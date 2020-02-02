@@ -1,8 +1,8 @@
 const getAdults = people => {
-    let result = {};
+    let result = [];
 
-    for (let person in people) {
-        if (people[person] >= 18) result[person] = people[person];
+    for (let person of people) {
+        if (people[person] >= 18) result.push(person);
     }
 
     return Object.keys(result).length == 0 ? {} : result;
