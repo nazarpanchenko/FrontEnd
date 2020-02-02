@@ -1,17 +1,11 @@
-const getCustomersList = (customers) => {
+const getCustomersList = customers => {
     let result = [];
 
     for (let customer in customers) {
-        let customerCopy = {};
-
-        customerCopy.name = customer.name;
-        customerCopy.age = customer.age;
-        result.push(customerCopy);
+        result.push(Object.assign({id : customer}, customers[customer]));
     }
 
-    console.log(result);
-
-    return result;
+    return result.sort((a, b) => a.age > b.age ? 1 : -1);
 };
 
 const customers = {
@@ -25,4 +19,4 @@ const customers = {
     }
 };
 
-getCustomersList(customers);
+console.log(getCustomersList(customers));
