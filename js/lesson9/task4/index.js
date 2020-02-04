@@ -1,13 +1,38 @@
-function transformToObject(arr) {
-    if (arr.length == 0) return {};
+const getPeople = rooms => {
+   let result = [];
 
-    let result = {};
+   rooms = Object.values(rooms).map(nestedArr => {
+      for (let obj of nestedArr) {
+         for (let key in obj) {
+            result.push(obj[key]);
+         }
+      }
+   });
 
-    arr.forEach(function(item, arr) {
-        result[item] = item;
-    });
+   console.log(result);
 
-    return result;
-}
+   return result;
+};
 
-transformToObject([1, 2, 3, 4, 5, 6, 'a', 'b']);
+const rooms = {
+    room1 : [
+       {name : 'room1 name1'},
+       {name : 'room1 name2'},
+       {name : 'room1 name3'},
+       {name : 'room1 name4'}
+    ],
+    room2 :[
+       {name : 'room2 name1'},
+       {name : 'room2 name2'},
+       {name : 'room2 name3'},
+       {name : 'room2 name4'}
+    ],
+    room3 :[
+        {name : 'room3 name1'},
+        {name : 'room3 name2'},
+        {name : 'room3 name3'},
+        {name : 'room3 name4'}
+     ]
+};
+
+console.log(getPeople(rooms));
