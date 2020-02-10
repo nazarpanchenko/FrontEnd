@@ -5,7 +5,9 @@ const getTotalPrice = numbers => {
         sum += el;
     });
 
-    return '$' + sum.toFixed(-2);
+    sum = Math.floor(+sum.toFixed(2));
+
+    return '$' + sum;
 };
 
 const numbers = [6, 0, 3, 8, 12, 24, 11, 9];
