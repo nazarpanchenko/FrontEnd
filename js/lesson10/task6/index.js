@@ -3,7 +3,7 @@ const getTotalPrice = numbers => {
 
     numbers.forEach(el => {
         sum += el;
-        Math.ceil(sum);
+        Math.floor(sum);
     });
 
     return '$' + sum.toFixed(2);
