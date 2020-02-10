@@ -38,7 +38,7 @@ const getParsedFloatsV2 = arr => {
     return result;
 };
 
-const arr = [3.15, 2.16, 3.45, 9.19, 11.24];
+const arr = [3.15, 2.1667, 3, 9];
 
 console.log(getParsedIntegers(arr));
 console.log(getParsedIntegersV2(arr));
