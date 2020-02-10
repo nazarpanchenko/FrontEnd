@@ -18,7 +18,7 @@ const getParsedIntegersV2 = arr => {
     return result;
 };
 
-const getparsedFloats = arr => {
+const getParsedFloats = arr => {
     const result = [];
 
     arr.forEach(el => {
