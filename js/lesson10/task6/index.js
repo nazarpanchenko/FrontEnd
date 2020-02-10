@@ -2,10 +2,10 @@ const getTotalPrice = numbers => {
     let sum = 0;
 
     numbers.forEach(el => {
-        sum += Math.floor(el).toFixed(2);
+        sum += el;
     });
 
-    return '$' + sum;
+    return '$' + sum.toFixed(Math.floor(sum));
 };
 
 const numbers = [6, 0, 3, 8, 12, 24, 11, 9];
