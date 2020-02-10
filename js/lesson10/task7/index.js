@@ -1,13 +1,11 @@
 const getRandomNumbers = (arrLength, min, max) => {
-    if (min >= max) return null;
+    if (min >= max || !Number.isInteger(min) || !Number.isInteger(max)) return null;
 
     let result = [];
 
     for (let i = 0; i < arrLength; i++) {
         let rand = Math.round(min + Math.random() * (max - min));
 
-        if (!Number.isInteger(rand)) return null;
-        
         result.push(rand);
     }
 
