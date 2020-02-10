@@ -1,4 +1,4 @@
-const randomInteger = (arrLength, min, max) => {
+const getRandomNumbers = (arrLength, min, max) => {
     let result = [];
 
     for (let i = 0; i < arrLength; i++) {
@@ -9,4 +9,4 @@ const randomInteger = (arrLength, min, max) => {
     return result;
 };
   
-console.log(randomInteger(10, 3, 8));
+console.log(getRandomNumbers(10, 3, 8));
