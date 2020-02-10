@@ -1,9 +1,9 @@
 const getRandomNumbers = (arrLength, min, max) => {
     if (min >= max) return null;
 
-    let result = new Array(arrLength);
+    let result = [];
 
-    for (let i = min; i <= max; i++) {
+    for (let i = 0; i < arrLength; i++) {
         if (!Number.isInteger(min) || !Number.isInteger(max)) return null;
 
         let rand = min + Math.random() * (max + 1 - min);
