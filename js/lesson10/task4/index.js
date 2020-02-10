@@ -1,4 +1,6 @@
 const getMaxAbsoluteNumber = numbers => {
+    if (!Array.isArray(numbers)) return null;
+
     const absoluteValues = numbers
         .map(num => Math.abs(num));
 
