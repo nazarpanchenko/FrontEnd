@@ -8,4 +8,4 @@ const multiRound = num => {
     ];
 };
 
-console.log(multiRound(6.38));
+console.log(multiRound(Math.PI));
