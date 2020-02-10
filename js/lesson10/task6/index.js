@@ -3,9 +3,10 @@ const getTotalPrice = numbers => {
 
     numbers.forEach(el => {
         sum += el;
+        Math.ceil(sum);
     });
 
-    return '$' + Math.ceil(sum.toFixed(2));
+    return '$' + sum.toFixed(2);
 };
 
 const numbers = [6, 0, 3, 8, 12, 24, 11, 9];
