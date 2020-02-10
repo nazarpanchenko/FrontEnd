@@ -2,7 +2,7 @@ const getFiniteNumbers = arr => {
     const result = [];
 
     arr.forEach(el => {
-        result.push(Number.isFinite(el));
+        if (Number.isFinite(el)) result.push(el);
     });
 
     return result;
@@ -12,7 +12,7 @@ const getFiniteNumbersV2 = arr => {
     const result = [];
 
     arr.forEach(el => {
-        result.push(isFinite(el));
+        if (isFinite(el)) result.push(el);
     });
 
     return result;
@@ -22,7 +22,7 @@ const getNaN = arr => {
     const result = [];
 
     arr.forEach(el => {
-        result.push(Number.isNaN(el));
+        if (Number.isNaN(el)) result.push(el);
     });
 
     return result;
@@ -32,7 +32,7 @@ const getNaNV2 = arr => {
     const result = [];
 
     arr.forEach(el => {
-       result.push(isNaN(el));
+        if (isNaN(el)) result.push(el);
     });
 
     return result;
@@ -42,7 +42,7 @@ const getIntegers = arr => {
     const result = [];
 
     arr.forEach(el => {
-       result.push(Number.isInteger(el));
+        if (Number.isInteger(el)) result.push(el);
     });
 
     return result;
