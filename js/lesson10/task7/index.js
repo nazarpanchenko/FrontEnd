@@ -1,7 +1,11 @@
 const getRandomNumbers = (arrLength, min, max) => {
-    let result = [];
+    if (min >= max) return null;
 
-    for (let i = 0; i < arrLength; i++) {
+    let result = new Array(arrLength);
+
+    for (let i = min; i <= max; i++) {
+        if (!Number.isInteger(min) || !Number.isInteger(max)) return null;
+
         let rand = min + Math.random() * (max + 1 - min);
         result.push(Math.floor(rand));
     }
