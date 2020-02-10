@@ -41,6 +41,6 @@ const getParsedFloatsV2 = arr => {
 const arr = [2, 6, Infinity, NaN, null, undefined, 0];
 
 console.log(getParsedIntegers(arr));
-console.log(getFiniteNumbersV2(arr));
-console.log(getparsedFloats(arr));
-console.log(getFiniteFloatsV2(arr));
+console.log(getParsedIntegersV2(arr));
+console.log(getParsedFloats(arr));
+console.log(getParsedFloatsV2(arr));
