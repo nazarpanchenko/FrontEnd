@@ -8,6 +8,4 @@ const multiRound = num => {
     ];
 };
 
-num = [3.14, -6.38, 18.88, 29.19];
-
-console.log(multiRound(num));
+console.log(multiRound(6.38));
