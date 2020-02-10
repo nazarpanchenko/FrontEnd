@@ -4,13 +4,9 @@ const getRandomNumbers = (arrLength, min, max) => {
     let result = [];
 
     for (let i = 0; i < arrLength; i++) {
-        let rand = min - 0.5 + Math.random() * (max - min + 1);
-        result.push(Math.floor(rand));
+        let rand = Math.round(min + Math.random() * (max - min));
+        result.push(rand);
     }
-
-    result.forEach(el => { 
-        if (!Number.isInteger(el)) return null;
-    });
 
     return result;
 };
