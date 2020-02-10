@@ -5,7 +5,7 @@ const getTotalPrice = numbers => {
         sum += el;
     });
 
-    return '$' + Math.floor(sum * 10) / 10;
+    return '$' + (Math.floor(sum * 100) / 100);
 };
 
 const numbers = [6, 0, 3, 8, 12, 24, 11, 9];
