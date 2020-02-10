@@ -2,8 +2,7 @@ const getTotalPrice = numbers => {
     let sum = 0;
 
     numbers.forEach(el => {
-        sum += el;
-        Math.floor(sum);
+        sum += Math.floor(el);
     });
 
     return '$' + sum.toFixed(2);
