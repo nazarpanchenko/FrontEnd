@@ -2,7 +2,7 @@ const getParsedIntegers = arr => {
     const result = [];
 
     arr.forEach(el => {
-        if (Number.parseInt(el)) result.push(el);
+        result.push(Number.parseInt(el));
     });
 
     return result;
@@ -12,7 +12,7 @@ const getParsedIntegersV2 = arr => {
     const result = [];
 
     arr.forEach(el => {
-        if (parseInt(el)) result.push(el);
+        result.push(parseInt(el));
     });
 
     return result;
@@ -22,7 +22,7 @@ const getparsedFloats = arr => {
     const result = [];
 
     arr.forEach(el => {
-        if (Number.parseFloat(el)) result.push(el);
+        result.push(Number.parseFloat(el));
     });
 
     return result;
@@ -32,7 +32,7 @@ const getParsedFloatsV2 = arr => {
     const result = [];
 
     arr.forEach(el => {
-        if (parseFloat(el)) result.push(el);
+        result.push(parseFloat(el));
     });
 
     return result;
