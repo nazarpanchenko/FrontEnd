@@ -5,7 +5,7 @@ const getTotalPrice = numbers => {
         sum += el;
     });
 
-    sum = Math.floor(+sum.toFixed(2));
+    sum = +sum.toFixed(2);
 
     return '$' + sum;
 };
