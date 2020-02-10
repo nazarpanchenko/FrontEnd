@@ -1,5 +1,5 @@
 const getRandomNumbers = (arrLength, min, max) => {
-    if (min >= max || !Number.isInteger(min) || !Number.isInteger(max)) return null;
+    if (min >= max) return null;
 
     let result = [];
 
