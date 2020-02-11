@@ -4,7 +4,7 @@ const getRandomNumbers = (arrLength, min, max) => {
     let result = [];
 
     for (let i = 0; i < arrLength; i++) {
-        let rand = Math.round(min + Math.random() * (max - min));
+        let rand = Math.floor(min + Math.random() * (max - min));
 
         if (!Number.isInteger(rand)) return null;
 
