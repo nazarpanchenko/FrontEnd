@@ -6,4 +6,5 @@ const multiRound = num =>  [
     +num.toFixed(2)
 ];
 
-console.log(multiRound(43.124));
+console.log(multiRound(4.12489));
+console.log(multiRound(-4.12489));
