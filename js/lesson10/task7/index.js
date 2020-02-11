@@ -6,8 +6,6 @@ const getRandomNumbers = (arrLength, min, max) => {
     for (let i = 0; i < arrLength; i++) {
         let rand = min + Math.random() * (max + 1 - min);
 
-        if (!Number.isInteger(rand)) return null;
-
         result.push(rand);
     }
 
