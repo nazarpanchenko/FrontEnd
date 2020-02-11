@@ -8,7 +8,7 @@ const getRandomNumbers = (arrLength, from, to) => {
     }
 
     for (let i = 0; i < arrLength; i++) {
-        let rand = Math.round(from - 0.5 + Math.random() * (to - from));
+        let rand = Math.trunc(from + Math.random() * (to - from));
 
         result.push(rand);
     }
