@@ -3,11 +3,7 @@ const sortContacts = (contacts, direction) => {
 
     const result = contacts
         .sort((a, b) => {
-            if (direction == true) {
-                return a.name.localeCompare(b.name);
-            } else {
-                return b.name.localeCompare(a.name);
-            }
+            return a.name.localeCompare(b.name);
         });
 
     return result;
