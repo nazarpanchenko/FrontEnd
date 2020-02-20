@@ -1,5 +1,7 @@
-const sortContacts = (contacts) => {
+const sortContacts = (contacts, direction) => {
     if (typeof(contacts) != 'object') return null;
+
+    if (!direction) direction = true;
 
     const result = contacts
         .sort((a, b) => {
@@ -9,4 +11,4 @@ const sortContacts = (contacts) => {
     return result;
 };
 
-sortContacts({ name: "Tom", phoneNumber: '777-77-77' });
+sortContacts({ name: "Tom", phoneNumber: '777-77-77' }, true);
