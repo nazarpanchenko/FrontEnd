@@ -1,8 +1,6 @@
 const sortContacts = (contacts, direction) => {
     if (typeof(contacts) != 'object') return null;
 
-    if (!direction) direction = true;
-
     const result = contacts
         .sort((a, b) => {
             return a.name.localeCompare(b.name);
