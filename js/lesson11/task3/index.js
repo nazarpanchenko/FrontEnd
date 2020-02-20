@@ -7,8 +7,8 @@ const splitString = (str, length) => {
     let startPos = 0;
 
     while (true) {
-        let chunk = text.substr(startPos, length);
-        
+        let chunk = str.substr(startPos, length);
+
         if (chunk.length === 0) break;
 
         strArr.push(chunk[0].toUpperCase() + chunk.slice(1));
