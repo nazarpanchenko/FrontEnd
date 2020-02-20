@@ -1,7 +1,7 @@
 const splitString = (str, length) => {
     if (typeof(str) != 'string') return null;
 
-    if (length == undefined) let length = 10;
+    if (length == undefined) length = 10;
 
     let strArr = [];
     let startPos = 0;
@@ -11,7 +11,7 @@ const splitString = (str, length) => {
 
         if (chunk.length === 0) break;
 
-        strArr.push(chunk[0].toUpperCase() + chunk.slice(1));
+        strArr.push(chunk[0].toLowerCase() + chunk.slice(1));
         startPos += length;
     }
 
