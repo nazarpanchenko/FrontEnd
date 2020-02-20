@@ -1,4 +1,8 @@
 const splitText = (text, length) => {
+    if (typeof(text) != 'string') return null;
+
+    if (length == null) length = 10;
+
     const strArr = [];
     let startPos = 0;
 
