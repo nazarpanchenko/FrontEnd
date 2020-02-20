@@ -1,18 +1,18 @@
-const splitString = (str, length) => {
+const splitString = (str, len) => {
     if (typeof(str) != 'string') return null;
 
-    if (length == undefined) length = 10;
+    if (!len) len = 10;
 
-    let strArr = [];
-    let startPos = 0;
+    let strArr = [],
+        startPos = 0;
 
     while (true) {
-        let chunk = str.substr(startPos, length);
+        let chunk = str.substr(startPos, len);
 
-        if (chunk.length === 0) break;
+        if (startPos == len) break;
 
-        strArr.push(chunk[0].toLowerCase() + chunk.slice(1));
-        startPos += length;
+        strArr.push(chunk);
+        startPos += 1;
     }
 
     return strArr;
