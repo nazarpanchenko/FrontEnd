@@ -1,22 +1,27 @@
 const splitString = (str, len) => {
-    if (typeof(str) != 'string') return null;
+    if (typeof(str) !== 'string') return null;
 
     if (!len) len = 10;
 
     let strArr = [],
-        startPos = 0;
+        arrIndex = -4;
 
     while (true) {
-        let chunk = str.substr(startPos, len);
+        if (arrIndex > len) break;
 
-        if (startPos == len) break;
+        arrIndex += len;
+
+        let chunk = str.substr(arrIndex, len);
 
         strArr.push(chunk);
-        startPos += 1;
+    }
+
+    for (let i = 0; i < strArr.length; i++) {
+        if (strArr[i].length < len) strArr[i] += "...";
     }
 
     return strArr;
 };
 
 
-splitString('abcd efgh', 4);
+console.log(splitString('abcd efgh', 4));
