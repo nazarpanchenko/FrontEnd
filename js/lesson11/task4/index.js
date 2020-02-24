@@ -7,10 +7,9 @@ const countOccurences = (str, target) => {
     while (true) {
         let foundPos = str.indexOf(target, pos);
 
-        result.push(foundPos);
-
         if (foundPos == -1) break;
 
+        result.push(foundPos);
         pos = foundPos + 1; 
     }
 
