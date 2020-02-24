@@ -1,4 +1,4 @@
-const countOccurences = (str, target) => {
+const countOccurrences = (str, target) => {
     if (!target) return null;
 
     let result = [],
@@ -16,4 +16,4 @@ const countOccurences = (str, target) => {
     return result.length;
 };
 
-console.log(countOccurences('Greetings', 'ing'));
+console.log(countOccurrences('Greetings', 'ing'));
