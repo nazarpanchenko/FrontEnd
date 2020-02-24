@@ -18,10 +18,11 @@ const splitString = (str, len) => {
         strArr.push(chunk);
     }
 
-    if (strArr[strArr.length - 1].length < len) strArr[strArr.length - 1] += "...";
+    while (strArr[strArr.length - 1].length < len) {
+        strArr[strArr.length - 1] += ".";
+    }
 
     return strArr;
 };
 
-
-splitString('abcd efgh', 4);
+console.log(splitString('abcd efgh', 4));
