@@ -4,11 +4,9 @@ const cleanTransactionsList = transactions => {
 
     for (let i = 0; i < transactions.length; i++)    {
         str = transactions[i];
-        str = str.trim();
+        str = parseFloat(str);
 
-        if (isNaN(+str)) str = str.charAt(0) + str.slice(1);
-
-        result.push('$' + (+str).toFixed(2));
+        result.push('$' + str.toFixed(2));
     }
 
     return result;
