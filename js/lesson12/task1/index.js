@@ -1,13 +1,17 @@
 const calc = expression => {
     const a = expression.split('');
+    let result;
 
     switch (a[1]) {
         case "+":
-            return Number(a[0]) + Number(a[2]);
+            result = Number(a[0]) + Number(a[2]);
             break;
         case "-":
-            return a[0] - a[2];
+            result = a[0] - a[2];
+            break;
     }
+
+    return expression + ' = ' + result;
 };
 
 calc('1 + 2');
