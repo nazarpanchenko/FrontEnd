@@ -1,5 +1,5 @@
 const calc = expression => {
-    const [a, operator, b] = expression.split('');
+    const [a, operator, b] = expression.split(' ');
     let result;
 
     switch (a[1]) {
