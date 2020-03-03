@@ -1,12 +1,10 @@
 const cleanTransactionsList = transactions => {
     let result = [],
-        str;
+        number;
 
     for (let i = 0; i < transactions.length; i++)    {
-        str = transactions[i];
-        str = parseFloat(str);
-
-        result.push('$' + str.toFixed(2));
+        number = transactions[i];
+        result.push('$' + (parseFloat(number).toFixed(2)));
     }
 
     return result;
