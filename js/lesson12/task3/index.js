@@ -4,6 +4,9 @@ const cleanTransactionsList = transactions => {
 
     for (let i = 0; i < transactions.length; i++)    {
         number = transactions[i];
+        
+        if (isNaN(number)) continue;
+         
         result.push('$' + (parseFloat(number).toFixed(2)));
     }
 
