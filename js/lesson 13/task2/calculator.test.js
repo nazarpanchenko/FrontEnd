@@ -1,4 +1,4 @@
-import getSum, {getSquaredNumbers, getOddNumbers} from './calculator';
+import getSum, { getSquaredNumbers, getOddNumbers } from './calculator';
 
 it ('should get square numbers', () => {
     const result = getSquaredNumbers([1, 2, 3]);
@@ -9,7 +9,7 @@ it ('should get square numbers', () => {
 it ('should keep odd numbers only', () => {
     const result = getOddNumbers([1, 2, 3, 4, 5]);
 
-    expect(result).toEqual([2]);
+    expect(result).toEqual([1, 3, 5]);
 });
 
 it ('should get the sum of numbers', () => {
