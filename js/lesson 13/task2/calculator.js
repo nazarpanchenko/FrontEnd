@@ -4,4 +4,4 @@ export const getSquaredNumbers = arr =>
 export const getOddNumbers = arr => 
     arr.filter(num => (num % 2 === 1));
 
-export default sum = (a, b ) => a + b;
+export default (a, b ) => a + b;
