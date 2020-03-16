@@ -13,7 +13,7 @@ it ('should keep odd numbers only', () => {
 });
 
 it ('should get the sum of numbers', () => {
-    const result = getSum(8, 4);
+    const result = getSquaredNumbers(8, 4);
 
     expect(result).toEqual(12);
 });
